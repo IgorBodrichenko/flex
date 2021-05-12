@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+body figure{
+    background: url('https://sites.google.com/site/prirodanasevseegooglgfgf/_/rsrc/1463456237313/home/priroda_gory_nebo_ozero_oblaka_81150_1920x1080.jpg') center/ cover no-repeat;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+body figure figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background: rgba(134, 136, 136, 0.5);
+}
+header{
+    padding: 1em;
+    width: 60em;
+    
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+header p{
+    width: 13em;
+    flex: auto;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #fff;
+}
+header nav{
+    width: 25em;
+    flex: auto;
+}
+header nav ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+header ul li a{
+    display: block;
+    color: #fff;
+}
+body .body_text{
+    
+    position: absolute;
+    z-index: 2;
+    
+    height: 20em;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -25%;
+    margin-top: -10em;
+}
+
+body .body_text div{
+    max-width: 38em;
+    display: flex;
+    min-height:15em ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+body .body_text h1{
+    color: #fff;
+    font-size: 3em;
+    
+}
+body .body_text h3 {
+    color: #fff;
+    font-size: 1.5em;
+    
+}
+body .body_text button ,main .letter .letter_email button{
+    background: #369EF3;
+    padding: 1em 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight:bolder;
+    border-radius: 5px;
+    border-color: #369EF3;
+    
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self:stretch;
+    
+}
+main p{
+    color: grey;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+main h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+main .line{
+    
+    width: 10em;
+    height: .1em;
+    background:steelblue;
+}
+main .cards ,main .info ,main .servis ,main .letter{
+    min-height: 70em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    background: #fff;
+    
+    text-align: center;
+}
+
+main  .text{ 
+   max-width: 50em;
+    min-height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+    
+}
+main .cards .cards_img{
+    max-width: 75em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    
+    
+    
+}
+main .cards .cards_img article{
+    display: flex;
+    width: 15em;
+    height: 15em;
+    background: #fff;
+    margin: 2em;
+    flex: auto;
+    position: relative;
+    overflow: hidden;
+}
+main .cards .cards_img article:nth-of-type(2) ,main .cards .cards_img article:nth-of-type(3){
+    width: 25em;
+}
+main .cards .cards_img article img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+main .servis{
+    min-height: 50em;
+}
+main .servis ,main .letter{
+    background: #F7F7F7;
+}
+main .servis .servis_choice{
+    max-width: 75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+main .servis .servis_choice article{
+    margin: 1em;
+    height: 20em;
+    width: 22em;
+    flex:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+
+}
+
+main .servis .servis_choice article i.fa-camera-retro ,main .servis .servis_choice article i.fa-cubes ,main .servis .servis_choice article i.fa-newspaper{
+    color: #2496EF;
+    font-size: 4em;
+    
+}
+
+
+main .info article p:first-of-type{
+    margin-bottom: 2em;
+
+}
+
+
+main .info ul{
+    max-width: 50em;
+    min-height: 35em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+main .info ul li{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    min-height: 15em;
+}
+main .letter{
+    min-height: 35em;
+}
+main .letter .letter_email{
+    
+    width: 40em;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center ;
+    align-content:flex-start;
+}
+main .letter .letter_email input{
+    width: 21em;
+    height: 4em;
+    padding: .5em;
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-right: 3em;
+
+}
+main .letter .letter_email button{
+    flex: auto;
+    
+}
+
+footer{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction:column;
+    min-height: 10em;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    background: #414A4F;
+    
+}
+footer article ul{
+    width: 14em;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+footer article ul a .fa-twitter-square, footer article ul a .fa-facebook-square, footer article ul a .fa-snapchat-square ,footer article ul a .fa-pinterest-square, footer article ul a .fa-github-square{
+    color: #fff;
+    font-size: 2em;
+}
+footer p {
+    color: grey;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    
+}
+footer p a{
+    color: honeydew;
+}
+
+
+@media all and (max-width: 1024px){
+    header{
+        width: 100%;
+    }
+
+}
+@media all and (max-width: 764px){
+    header{
+        width: 100%;
+    }
+    header p{
+        text-align: center;
+        margin-bottom: .5em;
+    }
+    header nav  ul{
+        justify-content: space-evenly;
+    }
+    body .body_text h1{
+        font-size: 2em;
+    }
+    body .body_text h3 {
+        font-size: 1em;
+    }
+    main .text{
+        max-width: 40em;
+    }
+    main .cards{
+        min-height: 100em;
+    }
+    main .servis{
+        min-height: 90em;
+    }
+    main .info ul{
+        max-width: 40em;
+    }
+    
+    main .letter .letter_email input{
+        margin-right: 1em;
+        width:18em ;
+    }
+}
+@media all and (max-width: 600px){
+    
+
+    
+    
+    
+    
+    main .cards .cards_img article:nth-of-type(2), main .cards .cards_img article:nth-of-type(3){
+        width: 15em;
+    }
+    main .text{
+        max-width: 20em;
+    }
+    main .info ul{
+        width: 20em;
+    }
+    main .info ul li{
+        margin-bottom: 1em;
+    }
+    main .info ul li:last-of-type{
+        margin-bottom: 0;
+    }
+    main .info ul li p:first-of-type{
+        margin-bottom: 1em;
+    }
+    main .letter .letter_email{
+        width: 20em;
+        flex-wrap: wrap;
+    }
+    main .letter .letter_email input{
+        max-width: 100%;
+    }
+    footer p{
+        font-size: .5em;
+    }
+    main .letter .letter_email input{
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+}
